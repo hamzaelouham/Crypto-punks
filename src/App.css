@@ -95,3 +95,42 @@
     var(--theme-light-color)
   );
 }
+.collection {
+  color: white;
+  background-color: var(--theme-searchbar-color);
+  border-radius: 4px;
+  overflow: hidden;
+  margin: 16px;
+  width: 300px;
+  height: 460px;
+}
+.collection > img {
+  width: 100%;
+  object-fit: contain;
+}
+.etherume {
+  height: 23px;
+  width: 15px;
+}
+.price {
+  display: flex;
+  align-items: center;
+}
+.ethprice {
+  margin-left: 5px;
+  font-weight: 600;
+  margin: 0;
+}
+.details {
+  padding: 20px;
+}
+.name {
+  font-size: 28px;
+  font-weight: 800;
+}
+.id {
+  color: var(--theme-text-color);
+  font-size: 16px;
+  margin-top: 18px;
+  font-weight: 600;
+}
