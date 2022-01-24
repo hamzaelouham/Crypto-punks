@@ -97,6 +97,7 @@
 }
 .collection {
   color: white;
+  cursor: pointer;
   background-color: var(--theme-searchbar-color);
   border-radius: 4px;
   overflow: hidden;
@@ -111,6 +112,7 @@
 .etherume {
   height: 23px;
   width: 15px;
+  margin-right: 6px;
 }
 .price {
   display: flex;
@@ -133,4 +135,30 @@
   font-size: 16px;
   margin-top: 18px;
   font-weight: 600;
+}
+.punks {
+  display: flex;
+  overflow: scroll;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 630px) {
+  .headeritems {
+    display: none;
+  }
+}
+@media screen and (max-width: 366px) {
+  .headeritems {
+    display: none;
+  }
+  .actions {
+    display: none;
+  }
+  .searchbar {
+    display: none;
+  }
+  .header {
+    justify-content: center;
+    align-items: center;
+  }
 }

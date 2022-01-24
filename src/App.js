@@ -1,14 +1,14 @@
 import React from "react";
 import Header from "./components/Header";
-import Card from "./components/Card";
+import Punks from "./components/Punks";
 import "./App.css";
-import pandas from "./assets/5.jpg";
+import { data } from "./data";
 
 function App() {
   return (
     <div className="app">
       <Header />
-      <Card id={1} name={"pandas"} price={15} imgurl={pandas} />
+      <Punks punks={data} />
     </div>
   );
 }
