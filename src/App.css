@@ -1,5 +1,97 @@
+:root {
+  --theme-dark-color: #000;
+  --theme-light-color: #fff;
+  --theme-text-color: #a1a5b0;
+  --theme-searchbar-color: #1c1c1e;
+  --theme-header-color: #fff;
+  --theme-input-color: #eee;
+  --theme-left-color: #59f9b7;
+  --theme-right-color: #66feea;
+}
+
 .app {
-  background-color: #000;
+  background-color: var(--theme-dark-color);
   min-height: 100vh;
   min-width: 100vw;
+  transition: 6ms ease;
+}
+
+.header {
+  color: var(--theme-color);
+  display: flex;
+  height: 100px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logocontainer {
+  margin: 10px;
+}
+.logo {
+  width: 130px;
+}
+.searchbar {
+  background-color: var(--theme-searchbar-color);
+  height: 50px;
+  display: flex;
+  flex: 1;
+  border-radius: 50px;
+  align-items: center;
+}
+
+.searchicon {
+  margin: 10px;
+}
+
+.searchinput {
+  border: none;
+  background-color: transparent;
+  width: 100%;
+  outline: none;
+  color: var(--theme-input-color);
+  font-size: 15px;
+}
+.headeritems {
+  display: flex;
+  text-align: center;
+  color: var(--theme-text-color);
+}
+.headeritems > p {
+  margin: 10px;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+}
+.actions > div {
+  margin: 10px;
+}
+.themeswitch {
+  display: flex;
+  background-color: var(--theme-searchbar-color);
+  border-radius: 50%;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  object-fit: contain;
+  cursor: pointer;
+}
+.themeswitch > img {
+  height: 25px;
+}
+.gotin {
+  margin-right: 10px;
+  border: none;
+  outline: none;
+  padding: 15px 30px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: 600;
+  color: black;
+  background: linear-gradient(
+    to right,
+    var(--theme-left-color),
+    var(--theme-light-color)
+  );
 }
